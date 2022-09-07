@@ -66,6 +66,7 @@ TAbb darAlta(TInfo datos, TAbb abb) {
 		}
 		aux = nuevo;
 	}
+	printf("---------------------------------\n");
 	return abb;
 }
 
@@ -121,6 +122,7 @@ TAbb modificarEmpleado(unsigned int cedulaIdentidad , TAbb abb){
 		scanf("%s %s %u %u %u" , nombre , apellido , &fechaNacimiento , &salarioInicial , &fechaIngreso);
 		TInfo nuevaInfo = crearInfo(nombre, apellido , fechaNacimiento , cedulaIdentidad , salarioInicial , fechaIngreso);
 		aux->data = nuevaInfo;
+
 	}
 	else{
 		printf("El empleado ingresado no existe en la base de datos. \n");

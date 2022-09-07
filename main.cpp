@@ -39,6 +39,12 @@ int main(){
 				scanf("%s %s %u %u %u %u" , nombre, apellido , &fechaNacimiento , &cedulaIdentidad , &salarioInicial , &fechaIngreso);
 				TInfo datos = crearInfo(nombre , apellido , fechaNacimiento , cedulaIdentidad , salarioInicial , fechaIngreso);
 				hashing[(cedulaIdentidad%10) % LARGO_CEDULA] = darAlta(datos , hashing[(cedulaIdentidad%10) % LARGO_CEDULA] );
+				printf("Nombre : %s\n", nombre);
+				printf("Apellido : %s\n", apellido);
+				printf("Fecha de nacimiento : %u / %u / %u\n",fechaNacimiento/1000000 ,(fechaNacimiento/10000)%100 ,fechaNacimiento%10000);
+				printf("Cedula de Identidad : %u-%u\n", cedulaIdentidad/10,cedulaIdentidad%10);
+				printf("Salario inicial : $%u\n", salarioInicial);
+				printf("Fecha de ingreso : %u\n" , fechaIngreso);
 				break;
 			}
 			case 2: {
