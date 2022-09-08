@@ -1,4 +1,4 @@
-# Gestion de Empleados
+# Gestión de Empleados
 compilacion: 
 
   g++ main.cpp src/abb.cpp src/info.cpp -o prueba
