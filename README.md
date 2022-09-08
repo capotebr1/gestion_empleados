@@ -1,8 +1,8 @@
 # Gestión de Empleados
 compilacion: 
 
-  g++ main.cpp src/abb.cpp src/info.cpp -o prueba
+- g++ main.cpp src/abb.cpp src/info.cpp -o prueba
 
-  ./prueba
+- ./prueba
   
 Base de datos de empleados para entrevista tecnica mediante Hashing y Arbol Binario de Busqueda.
